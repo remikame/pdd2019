@@ -1,0 +1,228 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 980px;
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+  height:100%;
+  min-height: 100%;
+}
+.header {
+  height: 56px;
+  width: 100%;
+  box-shadow: 0 0 10px #dddddd;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+.header-right-pc {
+  float: right;
+  display:block;
+  margin:1em 1%;
+  overflow: hidden;
+}
+.clear{
+  clear: both;
+}
+.header-right-pc ul{
+    margin:0;
+    padding:0;
+}
+.header-right-pc ul li{
+    display:inline-block;
+    list-style-type: none;
+    -webkit-transition:all 0.2s;
+            transition: all 0.2s;
+}
+.header-right-pc >ul>li>a> .sss{
+    border-top: 4px solid #aaaaaa;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: '';
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	        transition: color 0.1s linear;
+}
+.header-right-pc >ul>li>a> .ssr{
+    border-top: 4px solid #aaaaaa;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: '';
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	        transition: color 0.1s linear;
+}
+.header-right-pc >ul>li>a> .ae{
+    border-top: 4px solid #aaaaaa;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: '';
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	        transition: color 0.1s linear;
+}
+.header-right-pc >ul>li>a{
+    color: #aaaaaa;
+	display: block;
+	line-height: 56px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.header-right-pc > ul > li:hover {
+	background-color: skyblue;
+}
+.header-right-pc > ul > li:hover > a {
+	color: rgb( 255, 255, 255 );
+}
+.header-right-pc > ul > li:hover > a > .sss{
+	border-top-color: rgb( 255, 255, 255 );
+}
+.header-right-pc > ul > li:hover > a > .ssr{
+	border-top-color: rgb( 255, 255, 255 );
+}
+.header-right-pc > ul > li:hover > a > .ae{
+	border-top-color: rgb( 255, 255, 255 );
+}
+.header-right-pc > ul > li > div {
+	background-color: skyblue;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	width: 165px;
+	visibility: hidden;
+	-webkit-transition: opacity 0.2s;
+	        transition: opacity 0.2s;
+}
+.header-right-pc > ul > li:hover > div {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.header-right-pc > ul > li > div ul > li {
+	display: block;
+}
+.header-right-pc > ul > li > div ul > li > a {
+	color: #ffffff;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+.header-right-pc > ul > li > div ul > li:hover > a {
+	background-color: rgba( 255, 255, 255, 0.1);
+}
+.header-right-pc a {
+  line-height: 56px;
+  color: #5a5c5f;
+  margin-left: 5px;
+  font-size: 16px;
+  padding: 16px 5px;
+}
+.header-right-pc a:hover {
+  background-color: #e2f1ff;
+  transition: background-color 0.5s;
+}
+
+/*スマホ用のメニューバー*/
+.header-right-sp{
+    margin:0px;
+    padding: 0px 0px 0px 0px;
+    background-color:white;
+}
+.header-right-sp{
+    width:125px;
+    display:inline-block;
+    list-style-type: none;
+    position:relative;
+}
+.header-right-sp a{
+    background-color: white;
+    color: firebrick;
+    line-height: 40px;
+    text-align: center; /*メインメニューの文字列の配置（中央寄せ）*/
+    text-decoration: none; /*メニュー項目の装飾（下線を消す）*/
+    font-weight:bold; /*太字にする*/
+    display:block; /*項目内全域をリンク可能にする*/
+    content: '';
+}
+/*メニュー項目にマウスがのった時*/
+.header-right-sp a:hover{
+    background-color: #ffdddd;
+    color: #dd0000;
+}
+/*サブメニューの装飾*/
+.header-right-sp ul{
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    position: a absolute;
+    content: '';
+    text-decoration: none;
+    list-style: none;
+}
+.header-right-sp li:hover>ul{
+    display: block;
+}
+.header-right-sp ul li{
+    width:135px;
+    border-top:1px solid pink;
+}
+.header-right-sp ul li a{
+    line-height:35px;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+.header-right-sp ul li a:hover{
+    background-color: #ffff80;
+    color: #005500;
+}
+.header-right-sp ul ul{
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 100%;
+    border-left: 1px solid pink;
+}
+
+.footer {
+  position:fixed;
+  bottom:0;
+  height: 120px;
+  width: 100%;
+  background-color: #2f3a44;
+  color: #e8e8e8;
+  padding-top: 20px;
+  font-size: 14px;
+}
+.footer-left {
+  float: left;
+}
+.footer-right {
+  float: right;
+  padding-top: 50px;
+}
+.footer-left p {
+  margin-bottom: 8px;
+}
