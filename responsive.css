@@ -1,10 +1,10 @@
 @charset "utf-8";
 @media (max-width: 1024px) {
     .header-right-pc{
-        display:block;
+        display:none;
     }
     .header-right-sp{
-        display:none;
+        display:block;
     }
     
 @media (max-width: 670px) {
