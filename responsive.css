@@ -1,0 +1,43 @@
+@charset "utf-8";
+@media (max-width: 1024px) {
+    .header-right-pc{
+        display:block;
+    }
+    .header-right-sp{
+        display:none;
+    }
+    
+@media (max-width: 670px) {
+    .header-right-pc{
+        display:none;
+    }
+    .header-right-sp{
+        display:block;
+    }
+  .main {
+    padding: 60px 0;
+  }
+    .main h1{
+        font-size: 15px;
+        width:83px;
+    }
+    .main h3{
+        font-size:13px;
+    }
+  .main p {
+    font-size: 13px;
+  }
+    .footer{
+        height: 60px;
+    }
+    .footer-left{
+        font-size:12px;
+    }
+  .footer-right {
+    padding-top: 20px;
+      font-size:12px;
+  }
+  .contact input, .contact textarea {
+    width: 100%;
+  }
+}
